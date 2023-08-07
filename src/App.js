@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Box from "./Components/Box";
+import Input from "./Components/Input";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-screen p-3 text-center bg-indigo-900">
+      <h3 className="font-semibold text-white font-mono text-xl">CATATANK👀H!</h3>
+      <div className="rounded mx-auto max-w-[750px] min-h-[550px] shadow-2xl bg-white">
+        <Input/>
+        <Box/>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
