@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {AiOutlinePlus} from "react-icons/ai";
 
-export default function Input() {
+export default function Input(props) {
+  const inputBox = useRef()
   return (
     <div className='p-3 flex justify-around'>
         <input type="text" placeholder='Tulis Catatan...' className='rounded p-3 focus:outline-none w-[90%] border border-slate-400'/>
